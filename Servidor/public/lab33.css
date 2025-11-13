@@ -1,0 +1,151 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #dcdcdc;
+  text-align: center;
+  font-family: Sans-Serif;
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffe4c4;
+  padding: 20px 50px;
+}
+
+header h1 {
+  font-size: 30pt;
+  color: green;
+  margin: 0;
+}
+
+header img {
+  width: 100px;
+  height: auto;
+}
+
+
+nav {
+  background-color: #87cefa;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin: 0 40px;
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  font-size: 14pt;
+}
+
+
+.intro {
+  padding: 30px;
+}
+
+.intro h2 {
+  font-size: 22pt;
+  margin-bottom: 20px;
+}
+
+.intro p {
+  font-size: 20pt;
+  margin: 20px auto;
+  max-width: 1000px;
+  text-align: justify;
+}
+
+
+.livros h2 {
+  font-size: 20pt;
+  margin-top: 30px;
+}
+
+.livros-grid {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin: 30px 0;
+}
+
+.livros-grid img {
+  width: 220px;
+  height: auto;
+}
+
+
+.videos h2 {
+  font-size: 18pt;
+  margin-top: 30px;
+}
+
+.video-mapa {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 30px 0;
+}
+
+
+.contatos h2 {
+  font-size: 20pt;
+}
+
+.contatos table {
+  margin: 20px auto;
+  border: 2px dashed red;
+  border-collapse: collapse;
+  font-size: 14pt;
+}
+
+.contatos th, .contatos td {
+  padding: 12px 30px;
+  border: 1px solid black;
+}
+
+.links {
+  background-color: yellow;
+  margin: 30px auto;
+  display: inline-block;
+  padding: 15px;
+  text-align: left;
+  font-size: 12pt;
+}
+
+.links a {
+  color: black;
+}
+
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #f0f0f0;
+  margin-top: 40px;
+}
+
+footer p {
+  font-family: "Comic Sans MS", cursive;
+  font-size: 15pt;
+  margin: 0;
+}
+
+footer .rodape-logo {
+  width: 80px;
+  height: auto;
+}

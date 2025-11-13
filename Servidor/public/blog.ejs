@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog</title>
+    <link rel="stylesheet" href="/lab9.css">
+</head>
+<body>
+    <h1>Blog Online</h1>
+    <a class="botao" href="/cadastrar_post.html">Criar Novo Post</a>
+
+    <div class="posts">
+        <% if (posts.length === 0) { %>
+            <p>Nenhum post encontrado.</p>
+        <% } else { %>
+            <% posts.forEach(post => { %>
+                <div class="post">
+                    <h2><%= post.titulo %></h2>
+                    <p><strong><%= post.resumo %></strong></p>
+                    <p><%= post.conteudo %></p>
+                </div>
+            <% }) %>
+        <% } %>
+    </div>
+</body>
+</html>
+

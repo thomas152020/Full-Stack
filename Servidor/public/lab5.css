@@ -1,0 +1,31 @@
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #f6f8ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+main {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.canvas-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+canvas {
+  border: 1px solid #000;
+  background: #fff;
+}
