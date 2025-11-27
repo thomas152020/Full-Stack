@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Carros Disponíveis</title>
+
+    <link rel="stylesheet" href="/lab10.css">
+</head>
+<body>
+
+<nav>
+    <a href="/login">Login</a> |
+    <a href="/cadastro">Cadastro</a> |
+    <a href="/gerencia">Gerenciar Carros</a>
+</nav>
+
+<h1>Carros Disponíveis</h1>
+
+<table border="1" cellpadding="6">
+    <tr>
+        <th>Marca</th>
+        <th>Modelo</th>
+        <th>Ano</th>
+        <th>Quantidade</th>
+        <th>Ação</th>
+    </tr>
+
+    <% carros.forEach(function(carro){ %>
+        <tr>
+            <td><%= carro.marca %></td>
+            <td><%= carro.modelo %></td>
+            <td><%= carro.ano %></td>
+            <td><%= carro.qtde_disponivel %></td>
+            <td>
+                <% if(carro.qtde_disponivel > 0){ %>
+                    <form action="/vender/<%= carro._id %>" method="POST">
+                        <button type="submit">Vender</button>
+                    </form>
+                <% } else { %>
+                    <span style="color:red;">Esgotado</span>
+                <% } %>
+            </td>
+        </tr>
+    <% }) %>
+
+</table>
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Gerenciar Carros</title>
+
+    
+    <link rel="stylesheet" href="lab10.css">
+</head>
+<body>
+
+<nav>
+    <a href="login.html">Login</a> |
+    <a href="cadastro.html">Cadastro</a> |
+    <a href="carros.html">Carros Disponíveis</a>
+</nav>
+
+<h1>Gerenciamento de Carros</h1>
+
+<hr>
+
+<h2>Cadastrar Novo Carro</h2>
+<form>
+    <label>Modelo:</label><br>
+    <input type="text" required><br><br>
+
+    <label>Preço:</label><br>
+    <input type="number" required><br><br>
+
+    <label>Quantidade:</label><br>
+    <input type="number" required><br><br>
+
+    <button type="submit">Cadastrar</button>
+</form>
+
+<hr>
+
+<h2>Atualizar Carro</h2>
+<form>
+    <label>Selecione o carro:</label><br>
+    <select required>
+        <option>Uno Mille</option>
+        <option>Civic</option>
+    </select><br><br>
+
+    <label>Novo Preço:</label><br>
+    <input type="number"><br><br>
+
+    <label>Nova Quantidade:</label><br>
+    <input type="number"><br><br>
+
+    <button type="submit">Atualizar</button>
+</form>
+
+<hr>
+
+<h2>Remover Carro</h2>
+<form>
+    <label>Selecione o carro:</label><br>
+    <select required>
+        <option>Uno Mille</option>
+        <option>Civic</option>
+    </select><br><br>
+
+    <button type="submit" style="background:red;color:white;">Remover</button>
+</form>
+
+<hr>
+
+<h2>Vender Carro</h2>
+<form>
+    <label>Selecione o carro:</label><br>
+    <select required>
+        <option>Uno Mille (5 disponíveis)</option>
+        <option>Civic (0 disponíveis - Esgotado)</option>
+    </select><br><br>
+
+    <button type="submit">Vender</button>
+</form>
+
+</body>
+</html>
